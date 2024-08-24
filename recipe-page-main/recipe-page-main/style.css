@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:"Young Serif" ;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: "Outfit";
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+.container{
+    max-width: 100%;
+    background-color: hsl(30, 54%, 90%);
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+}
+
+.slide{
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.slide-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.2rem 3.2rem 1.2rem 3.2rem;
+}
+
+.img{
+    width:100%;
+    border-radius: 1rem;
+}
+
+.slide-content{
+    padding: 1.2rem 3.2rem 3.2rem 3.2rem;
+}
+
+.slide-content h1{
+    font-family: "Young Serif", serif;
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+    color:hsl(24, 5%, 18%);
+    font-weight: 700;
+}
+
+.slide-content-para{
+    /* padding-right: 1.2rem; */
+    font-size: 1.2rem;
+    font-family: "Outfit",serif;
+    color:hsl(30, 10%, 34%);
+    letter-spacing: 0.015rem;
+    word-spacing: 0.015rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 2.4rem;
+}
+
+.slide-points{
+    background-color:hsl(330, 100%, 98%) ;
+    padding:1.8rem 1.2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 1.8rem;
+    font-family: "Outfit",serif;
+}
+
+.slide-points h4{
+    padding-left: 0.8rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color:hsl(332, 51%, 32%);
+    margin-bottom: 1rem;
+    font-size: 500;
+}
+
+.slide-lists{
+    padding-left: 1.2rem;
+    margin-left: 1.8rem;
+    font-family: inherit;
+}
+
+.slide-list span{
+    font-size: 1.2rem;
+    color:hsl(30, 10%, 34%);
+    font-weight: 600;
+    margin-left: 0.8rem;
+}
+
+.slide-list{
+    font-size: 1.2rem;
+    color:hsl(30, 10%, 34%);
+}
+
+.slide-list:not(:last-child){
+    margin-bottom: 1.2rem;
+}
+
+h2{
+    font-size: 2.4rem;
+    color:hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+
+.slide-inglists{
+    font-family: "Outfit";
+    margin: 1.2rem 0 0 0;
+    padding-bottom: 1.2rem;
+    margin-left: 1.8rem;
+    color:hsl(30, 10%, 34%);
+}
+
+.slide-inglist{
+    font-size: 1.2rem;
+    color:inherit;
+    list-style-position: outside;
+    padding-left: 1.2rem;
+    font-weight: 500;
+}
+
+.slide-inglist:not(:last-child){
+    margin-bottom: 1.2rem;
+}
+
+.line{
+    border-bottom: 0.05rem solid hsl(30, 18%, 87%);
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.slideinslists{
+    margin: 0 1.8rem;
+    padding-top: 1.6rem;
+    font-family: "Outfit",sans-serif;
+}
+
+.slideinslist span{
+    font-size: 1.2rem;
+    color:hsl(24, 5%, 18%);
+    font-weight: 700;
+}
+
+.slideinslist{
+    list-style-position: outside;
+    padding-left: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color:hsl(30, 10%, 34%);
+}
+
+.slideinslist::marker{
+    color:hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.slideinslist:not(:last-child){
+    margin-bottom: 0.8rem;
+}
+
+.nutri-para{
+    font-family: "Outfit",sans-serif;
+    margin-top: 1.2rem;
+    margin-bottom: 1.8rem;
+    font-size: 1.2rem;
+    padding-left: 0;
+}
+
+.nutri-1 div{
+    font-family: "Outfit";
+    padding: 1.2rem 0;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 0.05rem solid hsl(30, 18%, 87%);
+}
+
+.p{
+    font-size: 1.4rem;
+    color:hsl(30, 10%, 34%);
+    padding-left: 2.2rem;
+    font-weight: 500;
+}
+
+.para{
+    font-size: 1.4rem;
+    color:hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+@media (max-width:768px){
+    .slide{
+        width: 70%;
+    }
+}
+
+@media (max-width:560px){
+    .slide{
+        width: 80%;
+    }
+}
+
+@media (max-width:450px){
+    .container{
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .slide{
+        width:100%;
+    }
+    .slide-img{
+        padding:0;
+    }
+    .img{
+        border-radius: 0;
+    }
+    .slide-content{
+        padding:2.4rem;
+    }
+}
+
+@media (max-width:400px){
+    html{
+        font-size: 58%;
+    }
+}
+
+@media (max-width:350px){
+    html{
+        font-size: 52%;
+    }
+}
+
+@media (max-width:300px){
+    html{
+        font-size: 48%;
+    }
+}
